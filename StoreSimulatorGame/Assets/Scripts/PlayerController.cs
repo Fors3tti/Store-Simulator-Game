@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
 
     public float moveSpeed;
 
+    private float ySpeed;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,6 +30,15 @@ public class PlayerController : MonoBehaviour
         Vector3 moveAmount = new Vector3(moveInput.x, 0f, moveInput.y);
 
         moveAmount = moveAmount * moveSpeed;
+
+        if(charCon.isGrounded == true)
+        {
+            ySpeed = 0f;
+        }
+
+        ySpeed = ySpeed + (Physics.gravity.y * Time.deltaTime);
+
+        moveAmount.y = ySpeed;
 
         charCon.Move(moveAmount * Time.deltaTime);
     }
