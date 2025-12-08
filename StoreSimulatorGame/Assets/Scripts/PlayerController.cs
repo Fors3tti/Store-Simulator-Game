@@ -15,6 +15,12 @@ public class PlayerController : MonoBehaviour
 
     public float jumpForce;
 
+    public InputActionReference lookAction;
+
+    private float horiRot;
+
+    public float lookSpeed;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,6 +30,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector2 lookInput = lookAction.action.ReadValue<Vector2>();
+
+        horiRot += lookInput.x * Time.deltaTime * lookSpeed;
+
+        transform.rotation = Quaternion.Euler(0f, horiRot, 0f);
+
         Vector2 moveInput = moveAction.action.ReadValue<Vector2>();
 
         //Debug.Log(moveInput);
@@ -45,7 +57,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        ySpeed = ySpeed + (Physics.gravity.y * Time.deltaTime);
+        ySpeed += (Physics.gravity.y * Time.deltaTime);
 
        
 
