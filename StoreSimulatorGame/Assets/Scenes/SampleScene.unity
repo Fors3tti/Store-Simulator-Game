@@ -437,6 +437,7 @@ MonoBehaviour:
   jumpForce: 4
   lookAction: {fileID: -5630151704836100654, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   lookSpeed: 10
+  theCam: {fileID: 330585546}
 --- !u!143 &634220821
 CharacterController:
   m_ObjectHideFlags: 0
