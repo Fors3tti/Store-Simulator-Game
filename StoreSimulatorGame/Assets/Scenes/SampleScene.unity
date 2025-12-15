@@ -395,7 +395,7 @@ GameObject:
   - component: {fileID: 423066203}
   - component: {fileID: 423066202}
   - component: {fileID: 423066201}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PickUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -488,7 +488,7 @@ Transform:
   m_GameObject: {fileID: 423066200}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.6, z: 8}
+  m_LocalPosition: {x: 0, y: 1, z: 8}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -548,9 +548,13 @@ MonoBehaviour:
   jumpForce: 4
   lookAction: {fileID: -5630151704836100654, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   lookSpeed: 10
-  theCam: {fileID: 330585546}
+  theCam: {fileID: 330585545}
   minLookAngle: -60
   maxLookAngle: 60
+  whatIsStock:
+    serializedVersion: 2
+    m_Bits: 64
+  interactionRange: 5
 --- !u!143 &634220821
 CharacterController:
   m_ObjectHideFlags: 0
