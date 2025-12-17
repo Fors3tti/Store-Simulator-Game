@@ -102,7 +102,17 @@ public class PlayerController : MonoBehaviour
                 heldPickUp.transform.SetParent(holdPoint);
                 heldPickUp.transform.localPosition = Vector3.zero;
                 heldPickUp.transform.localRotation = Quaternion.identity;
+
+                heldPickUp.GetComponent<Rigidbody>().isKinematic = true;
             }
+        }
+
+        if (Mouse.current.rightButton.wasPressedThisFrame)
+        {
+            heldPickUp.GetComponent<Rigidbody>().isKinematic = false;
+
+            heldPickUp.transform.SetParent(null);
+            heldPickUp = null;
         }
     }
 }
