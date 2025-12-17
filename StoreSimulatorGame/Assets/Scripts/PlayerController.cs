@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsStock;
     public float interactionRange;
 
+    private GameObject heldPickUp;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -80,13 +82,23 @@ public class PlayerController : MonoBehaviour
         Ray ray = theCam.ViewportPointToRay(new Vector3(.5f, .5f, 0f));
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, interactionRange, whatIsStock))
+        /* if (Physics.Raycast(ray, out hit, interactionRange, whatIsStock))
         {
             Debug.Log("I see a pickUp");
         }
         else
         {
             Debug.Log("I can't see anything!");
+        } */
+
+        if (Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            if (Physics.Raycast(ray, out hit, interactionRange, whatIsStock))
+            {
+                //Debug.Log("I see a pickUp");
+
+                heldPickUp = hit.collider.gameObject;
+            }
         }
     }
 }
