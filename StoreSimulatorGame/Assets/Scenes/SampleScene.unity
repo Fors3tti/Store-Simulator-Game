@@ -635,6 +635,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   interactionRange: 5
+  holdPoint: {fileID: 1417139749}
 --- !u!143 &634220821
 CharacterController:
   m_ObjectHideFlags: 0

@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     public float interactionRange;
 
     private GameObject heldPickUp;
+    public Transform holdPoint;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -98,6 +99,9 @@ public class PlayerController : MonoBehaviour
                 //Debug.Log("I see a pickUp");
 
                 heldPickUp = hit.collider.gameObject;
+                heldPickUp.transform.SetParent(holdPoint);
+                heldPickUp.transform.localPosition = Vector3.zero;
+                heldPickUp.transform.localRotation = Quaternion.identity;
             }
         }
     }
