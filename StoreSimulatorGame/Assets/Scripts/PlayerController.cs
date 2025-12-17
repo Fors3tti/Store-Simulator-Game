@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
     private GameObject heldPickUp;
     public Transform holdPoint;
 
+    public float throwForce;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -109,7 +111,9 @@ public class PlayerController : MonoBehaviour
 
         if (Mouse.current.rightButton.wasPressedThisFrame)
         {
-            heldPickUp.GetComponent<Rigidbody>().isKinematic = false;
+            Rigidbody pickUpRB = heldPickUp.GetComponent<Rigidbody>();
+            pickUpRB.isKinematic = false;
+            pickUpRB.AddForce(theCam.transform.forward * throwForce, ForceMode.Impulse); 
 
             heldPickUp.transform.SetParent(null);
             heldPickUp = null;
