@@ -94,29 +94,34 @@ public class PlayerController : MonoBehaviour
             Debug.Log("I can't see anything!");
         } */
 
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        if (heldPickUp == null)
         {
-            if (Physics.Raycast(ray, out hit, interactionRange, whatIsStock))
+            if (Mouse.current.leftButton.wasPressedThisFrame)
             {
-                //Debug.Log("I see a pickUp");
+                if (Physics.Raycast(ray, out hit, interactionRange, whatIsStock))
+                {
+                    //Debug.Log("I see a pickUp");
 
-                heldPickUp = hit.collider.gameObject;
-                heldPickUp.transform.SetParent(holdPoint);
-                heldPickUp.transform.localPosition = Vector3.zero;
-                heldPickUp.transform.localRotation = Quaternion.identity;
+                    heldPickUp = hit.collider.gameObject;
+                    heldPickUp.transform.SetParent(holdPoint);
+                    heldPickUp.transform.localPosition = Vector3.zero;
+                    heldPickUp.transform.localRotation = Quaternion.identity;
 
-                heldPickUp.GetComponent<Rigidbody>().isKinematic = true;
+                    heldPickUp.GetComponent<Rigidbody>().isKinematic = true;
+                }
             }
         }
-
-        if (Mouse.current.rightButton.wasPressedThisFrame)
+        else
         {
-            Rigidbody pickUpRB = heldPickUp.GetComponent<Rigidbody>();
-            pickUpRB.isKinematic = false;
-            pickUpRB.AddForce(theCam.transform.forward * throwForce, ForceMode.Impulse); 
+            if (Mouse.current.rightButton.wasPressedThisFrame)
+            {
+                Rigidbody pickUpRB = heldPickUp.GetComponent<Rigidbody>();
+                pickUpRB.isKinematic = false;
+                pickUpRB.AddForce(theCam.transform.forward * throwForce, ForceMode.Impulse);
 
-            heldPickUp.transform.SetParent(null);
-            heldPickUp = null;
+                heldPickUp.transform.SetParent(null);
+                heldPickUp = null;
+            }
         }
     }
 }
