@@ -637,6 +637,9 @@ MonoBehaviour:
   interactionRange: 5
   holdPoint: {fileID: 1417139749}
   throwForce: 10
+  whatIsShelf:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!143 &634220821
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1562,7 +1565,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1854471559}
   - component: {fileID: 1854471560}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Shelf Space
   m_TagString: Untagged
   m_Icon: {fileID: 0}

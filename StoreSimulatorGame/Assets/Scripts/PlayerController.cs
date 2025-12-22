@@ -27,6 +27,8 @@ public class PlayerController : MonoBehaviour
 
     public float throwForce;
 
+    public LayerMask whatIsShelf;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -113,6 +115,18 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            if (Mouse.current.leftButton.wasPressedThisFrame)
+            {
+                if (Physics.Raycast(ray, out hit, interactionRange, whatIsShelf))
+                {
+                    heldPickUp.transform.position = hit.transform.position;
+                    heldPickUp.transform.rotation = hit.transform.rotation;
+
+                    heldPickUp.transform.SetParent(null);
+                    heldPickUp = null;
+                }
+            }
+
             if (Mouse.current.rightButton.wasPressedThisFrame)
             {
                 Rigidbody pickUpRB = heldPickUp.GetComponent<Rigidbody>();
