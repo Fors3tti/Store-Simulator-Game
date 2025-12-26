@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsStock;
     public float interactionRange;
 
-    private GameObject heldPickUp;
+    private StockObject heldPickUp;
     public Transform holdPoint;
 
     public float throwForce;
@@ -104,12 +104,16 @@ public class PlayerController : MonoBehaviour
                 {
                     //Debug.Log("I see a pickUp");
 
-                    heldPickUp = hit.collider.gameObject;
+                    /* heldPickUp = hit.collider.gameObject;
                     heldPickUp.transform.SetParent(holdPoint);
                     heldPickUp.transform.localPosition = Vector3.zero;
                     heldPickUp.transform.localRotation = Quaternion.identity;
 
-                    heldPickUp.GetComponent<Rigidbody>().isKinematic = true;
+                    heldPickUp.GetComponent<Rigidbody>().isKinematic = true; */
+
+                    heldPickUp = hit.collider.GetComponent<StockObject>();
+                    heldPickUp.transform.SetParent(holdPoint);
+                    heldPickUp.PickUp();
                 }
             }
         }
@@ -119,10 +123,15 @@ public class PlayerController : MonoBehaviour
             {
                 if (Physics.Raycast(ray, out hit, interactionRange, whatIsShelf))
                 {
-                    heldPickUp.transform.position = hit.transform.position;
+                    /* heldPickUp.transform.position = hit.transform.position;
                     heldPickUp.transform.rotation = hit.transform.rotation;
 
                     heldPickUp.transform.SetParent(null);
+                    heldPickUp = null; */
+
+                    heldPickUp.MakePlaced();
+
+                    heldPickUp.transform.SetParent(hit.transform);
                     heldPickUp = null;
                 }
             }
