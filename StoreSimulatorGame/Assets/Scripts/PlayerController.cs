@@ -138,9 +138,11 @@ public class PlayerController : MonoBehaviour
 
             if (Mouse.current.rightButton.wasPressedThisFrame)
             {
-                Rigidbody pickUpRB = heldPickUp.GetComponent<Rigidbody>();
-                pickUpRB.isKinematic = false;
-                pickUpRB.AddForce(theCam.transform.forward * throwForce, ForceMode.Impulse);
+                //Rigidbody pickUpRB = heldPickUp.GetComponent<Rigidbody>();
+                //pickUpRB.isKinematic = false;
+
+                heldPickUp.Release();
+                heldPickUp.theRB.AddForce(theCam.transform.forward * throwForce, ForceMode.Impulse);
 
                 heldPickUp.transform.SetParent(null);
                 heldPickUp = null;
