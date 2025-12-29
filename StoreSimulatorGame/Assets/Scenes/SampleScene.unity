@@ -1770,6 +1770,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57732da32f93a1046a448396a66f1b71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StockObject
+  info:
+    name: Orange Drink
+    typeOfStock: 1
   moveSpeed: 6
   theRB: {fileID: 2018717111}
 --- !u!1660057539 &9223372036854775807
