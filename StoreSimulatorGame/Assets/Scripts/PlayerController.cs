@@ -129,10 +129,17 @@ public class PlayerController : MonoBehaviour
                     heldPickUp.transform.SetParent(null);
                     heldPickUp = null; */
 
-                    heldPickUp.MakePlaced();
+                    /* heldPickUp.MakePlaced();
 
                     heldPickUp.transform.SetParent(hit.transform);
-                    heldPickUp = null;
+                    heldPickUp = null; */
+
+                    hit.collider.GetComponent<ShelfSpaceController>().PlaceStock(heldPickUp);
+
+                    if (heldPickUp.isPlaced == true)
+                    {
+                        heldPickUp = null;
+                    }
                 }
             }
 
