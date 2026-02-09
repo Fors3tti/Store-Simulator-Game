@@ -601,7 +601,7 @@ Transform:
   m_GameObject: {fileID: 634220818}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalPosition: {x: 1, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -753,6 +753,7 @@ MonoBehaviour:
     name: Orange Drink
     typeOfStock: 1
   moveSpeed: 6
+  isPlaced: 0
   theRB: {fileID: 725097894}
 --- !u!54 &725097894
 Rigidbody:
@@ -896,6 +897,7 @@ MonoBehaviour:
     name: Cola Drink
     typeOfStock: 1
   moveSpeed: 6
+  isPlaced: 0
   theRB: {fileID: 803329265}
 --- !u!1 &832575517
 GameObject:
@@ -1619,6 +1621,7 @@ MonoBehaviour:
     name: Orange Drink
     typeOfStock: 1
   moveSpeed: 6
+  isPlaced: 0
   theRB: {fileID: 1694308838}
 --- !u!54 &1694308838
 Rigidbody:
@@ -1735,6 +1738,7 @@ MonoBehaviour:
     name: Cola Drink
     typeOfStock: 1
   moveSpeed: 6
+  isPlaced: 0
   theRB: {fileID: 1713334806}
 --- !u!54 &1713334806
 Rigidbody:
@@ -1918,6 +1922,7 @@ MonoBehaviour:
     name: Cola Drink
     typeOfStock: 1
   moveSpeed: 6
+  isPlaced: 0
   theRB: {fileID: 1775081929}
 --- !u!54 &1775081929
 Rigidbody:
@@ -2120,6 +2125,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56368c3adb681f64c8069cc66f3d29bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShelfSpaceController
+  info:
+    name: 
+    typeOfStock: 0
+  amountOnShelf: 0
 --- !u!1 &1921771489
 GameObject:
   m_ObjectHideFlags: 0
@@ -2271,6 +2280,7 @@ MonoBehaviour:
     name: Orange Drink
     typeOfStock: 1
   moveSpeed: 6
+  isPlaced: 0
   theRB: {fileID: 2018717111}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
