@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2930566336611992553}
   - component: {fileID: 6327884577026230255}
   - component: {fileID: 8808582709140700520}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: can_chips_classic
   m_TagString: Untagged
   m_Icon: {fileID: 0}

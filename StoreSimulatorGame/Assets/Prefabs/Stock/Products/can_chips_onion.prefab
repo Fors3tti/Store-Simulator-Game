@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 771471916765343414}
   - component: {fileID: 4923035454177179218}
   - component: {fileID: 3095801645471677831}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: can_chips_onion
   m_TagString: Untagged
   m_Icon: {fileID: 0}

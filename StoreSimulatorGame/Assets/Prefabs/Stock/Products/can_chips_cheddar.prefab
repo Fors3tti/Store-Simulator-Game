@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 141284559026950752}
   - component: {fileID: 8463113713060031132}
   - component: {fileID: 1043100660722289339}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: can_chips_cheddar
   m_TagString: Untagged
   m_Icon: {fileID: 0}

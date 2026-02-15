@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7896839172691010619}
   - component: {fileID: 260058179962834590}
   - component: {fileID: 4140657864677391242}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: can_chips_bbq
   m_TagString: Untagged
   m_Icon: {fileID: 0}

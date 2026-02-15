@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1242451424211038582}
   - component: {fileID: 1226193725081493650}
   - component: {fileID: 2342984193521744786}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: box_cereal_rings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
