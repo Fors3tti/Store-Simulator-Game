@@ -5201,6 +5201,92 @@ MonoBehaviour:
   - {fileID: 786358384}
   - {fileID: 1187690886}
   - {fileID: 1079889389}
+  cerealPoints:
+  - {fileID: 233289174}
+  - {fileID: 1804399929}
+  - {fileID: 703570678}
+  - {fileID: 1358482194}
+  - {fileID: 372727392}
+  - {fileID: 234482436}
+  - {fileID: 1954659831}
+  - {fileID: 738045591}
+  - {fileID: 1348039043}
+  - {fileID: 1019787581}
+  - {fileID: 739145147}
+  - {fileID: 38744582}
+  - {fileID: 615062166}
+  - {fileID: 1177210761}
+  - {fileID: 1143822431}
+  - {fileID: 1004778618}
+  - {fileID: 1451658485}
+  - {fileID: 403915482}
+  - {fileID: 1906426386}
+  - {fileID: 295666408}
+  tubeChipsPoints:
+  - {fileID: 574846777}
+  - {fileID: 1787293693}
+  - {fileID: 22767244}
+  - {fileID: 517102942}
+  - {fileID: 1795449118}
+  - {fileID: 1849732835}
+  - {fileID: 577220147}
+  - {fileID: 1094095523}
+  - {fileID: 1625076645}
+  - {fileID: 1867802596}
+  - {fileID: 1535579809}
+  - {fileID: 784853770}
+  - {fileID: 1151673922}
+  - {fileID: 20813136}
+  - {fileID: 1340874869}
+  - {fileID: 1746945298}
+  - {fileID: 1064261192}
+  - {fileID: 1858345846}
+  - {fileID: 670045027}
+  - {fileID: 985511096}
+  - {fileID: 808200897}
+  - {fileID: 1618293017}
+  - {fileID: 643264739}
+  - {fileID: 171973474}
+  - {fileID: 242998857}
+  - {fileID: 590129426}
+  - {fileID: 272073115}
+  - {fileID: 1017582366}
+  - {fileID: 812884278}
+  - {fileID: 1895328288}
+  - {fileID: 670136763}
+  - {fileID: 2101226715}
+  - {fileID: 855529148}
+  - {fileID: 1637275923}
+  - {fileID: 921538313}
+  - {fileID: 1129421774}
+  - {fileID: 641642676}
+  - {fileID: 1049437244}
+  - {fileID: 1172706795}
+  - {fileID: 2007123229}
+  - {fileID: 2032935154}
+  - {fileID: 802855253}
+  - {fileID: 221767739}
+  - {fileID: 97610291}
+  fruitPoints:
+  - {fileID: 115693255}
+  - {fileID: 1064025885}
+  - {fileID: 1934337238}
+  - {fileID: 964511475}
+  - {fileID: 70065538}
+  - {fileID: 1508028890}
+  - {fileID: 1257247122}
+  - {fileID: 1554179008}
+  - {fileID: 2037930025}
+  - {fileID: 410382779}
+  - {fileID: 930261394}
+  - {fileID: 669008868}
+  - {fileID: 358516299}
+  - {fileID: 1155366564}
+  largeFruitPoints:
+  - {fileID: 1848512243}
+  - {fileID: 1744615508}
+  - {fileID: 648598441}
+  - {fileID: 1972773167}
 --- !u!1 &1858345845
 GameObject:
   m_ObjectHideFlags: 0
