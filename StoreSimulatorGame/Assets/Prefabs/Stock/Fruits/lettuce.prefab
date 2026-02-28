@@ -91,6 +91,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &3817565637672198254
 MeshCollider:
@@ -155,7 +156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StockObject
   info:
     name: Lettuce
-    typeOfStock: 3
+    typeOfStock: 4
   moveSpeed: 6
   isPlaced: 0
   theRB: {fileID: 6168307761163700911}
