@@ -7,8 +7,12 @@ public class StockInfoController : MonoBehaviour
 
     private List<StockInfo> allStock = new List<StockInfo>();
 
+    public static StockInfoController instance;
+
     private void Awake()
     {
+        instance = this;
+
         allStock.AddRange(foodInfo);
         allStock.AddRange(produceInfo);
     }
