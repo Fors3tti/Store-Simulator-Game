@@ -1232,7 +1232,7 @@ MonoBehaviour:
   foodInfo:
   - name: Apple Green
     typeOfStock: 3
-    price: 1.5
+    price: 1.75
     stockObject: {fileID: 7105867189830386704, guid: 5f3ca005c49467c409a6c657a2e9900c, type: 3}
   - name: Aubergine
     typeOfStock: 3
