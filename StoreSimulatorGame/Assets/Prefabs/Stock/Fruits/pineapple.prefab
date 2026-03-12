@@ -91,6 +91,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &1548763139534521017
 MeshCollider:
@@ -156,6 +157,7 @@ MonoBehaviour:
   info:
     name: Pineapple
     typeOfStock: 4
+    price: 4
   moveSpeed: 6
   isPlaced: 0
   theRB: {fileID: 7482759656558992778}

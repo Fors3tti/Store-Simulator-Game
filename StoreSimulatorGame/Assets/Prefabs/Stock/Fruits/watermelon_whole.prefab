@@ -91,6 +91,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &445619207112276253
 MeshCollider:
@@ -156,6 +157,7 @@ MonoBehaviour:
   info:
     name: Watermelon
     typeOfStock: 4
+    price: 5
   moveSpeed: 6
   isPlaced: 0
   theRB: {fileID: 6395726515605072061}

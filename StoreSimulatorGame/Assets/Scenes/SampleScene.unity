@@ -251,10 +251,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1043100660722289339, guid: 7f4c5b8cf7f0052459eac7e4bc729c23, type: 3}
-      propertyPath: info.price
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 2354343601606310643, guid: 7f4c5b8cf7f0052459eac7e4bc729c23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.155
@@ -418,10 +414,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3095801645471677831, guid: 9407da6a03393fd4db39f26e2d2e0c40, type: 3}
-      propertyPath: info.price
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -435,10 +427,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4878848040285068788, guid: e4fdf84e438e9204883f41a6769dd1b7, type: 3}
-      propertyPath: info.price
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 6523762024060291336, guid: e4fdf84e438e9204883f41a6769dd1b7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.17273
@@ -567,10 +555,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6958007266044531327, guid: 20e10f1d3ad938247968716a1a487d20, type: 3}
-      propertyPath: info.price
-      value: 2.5
-      objectReference: {fileID: 0}
     - target: {fileID: 8025998510018892817, guid: 20e10f1d3ad938247968716a1a487d20, type: 3}
       propertyPath: m_Name
       value: watermelon_half
@@ -685,10 +669,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: box_cereal_rings
       objectReference: {fileID: 0}
-    - target: {fileID: 2342984193521744786, guid: aa4d2438a0140e447a96fb70d0724c26, type: 3}
-      propertyPath: info.price
-      value: 2.5
-      objectReference: {fileID: 0}
     - target: {fileID: 7582170368506831729, guid: aa4d2438a0140e447a96fb70d0724c26, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.25538
@@ -773,10 +753,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1722704884629910347, guid: 6d2837f0ad9f4844cb4acb5df1a9115e, type: 3}
-      propertyPath: info.price
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 5516580160007317001, guid: 6d2837f0ad9f4844cb4acb5df1a9115e, type: 3}
       propertyPath: m_Name
       value: bottle1_cola
@@ -970,10 +946,6 @@ PrefabInstance:
     - target: {fileID: 5386931552938024229, guid: 43e0ae34c698be949ba140489df86006, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8808582709140700520, guid: 43e0ae34c698be949ba140489df86006, type: 3}
-      propertyPath: info.price
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1487,10 +1459,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4376889494830669589, guid: 22465ec83d7457946aa638e9f0cfc7cc, type: 3}
-      propertyPath: info.price
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 5698923813317803191, guid: 22465ec83d7457946aa638e9f0cfc7cc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.17273
@@ -1704,10 +1672,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: bottle1_lime
       objectReference: {fileID: 0}
-    - target: {fileID: 8459584106619388308, guid: 7868b719bbe826b48b9a09c3c937562f, type: 3}
-      propertyPath: info.price
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1760,10 +1724,6 @@ PrefabInstance:
     - target: {fileID: 3467807089928098341, guid: 3fc6429aca316374ba6902cabac2d5f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7001335156217049125, guid: 3fc6429aca316374ba6902cabac2d5f1, type: 3}
-      propertyPath: info.price
-      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 9188056226280818828, guid: 3fc6429aca316374ba6902cabac2d5f1, type: 3}
       propertyPath: m_Name
@@ -2617,10 +2577,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6608870540794265560, guid: a7de9b5006555794cb0e2757eb072894, type: 3}
-      propertyPath: info.price
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7127135292546137065, guid: a7de9b5006555794cb0e2757eb072894, type: 3}
       propertyPath: m_Name
       value: lemon
@@ -2774,10 +2730,6 @@ PrefabInstance:
     - target: {fileID: 2446783880027404755, guid: d411dad2bc1dc714aa635b7e00b4c1e0, type: 3}
       propertyPath: m_Name
       value: lettuce
-      objectReference: {fileID: 0}
-    - target: {fileID: 2942173607255115050, guid: d411dad2bc1dc714aa635b7e00b4c1e0, type: 3}
-      propertyPath: info.price
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3759,10 +3711,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 64587455569658086, guid: b7cea0b05a55c3d44b07c7f042a0b38a, type: 3}
-      propertyPath: info.price
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 915087512525874924, guid: b7cea0b05a55c3d44b07c7f042a0b38a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.25538
@@ -4670,18 +4618,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 164102134711812511, guid: c1f1ac9c17fa0524486939b2143d6d16, type: 3}
-      propertyPath: info.price
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2135101417987750963, guid: c1f1ac9c17fa0524486939b2143d6d16, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.18000004
-      objectReference: {fileID: 0}
-    - target: {fileID: 2135101417987750963, guid: c1f1ac9c17fa0524486939b2143d6d16, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.18000004
-      objectReference: {fileID: 0}
     - target: {fileID: 2135101417987750963, guid: c1f1ac9c17fa0524486939b2143d6d16, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.25538
@@ -4857,10 +4793,6 @@ PrefabInstance:
     - target: {fileID: 1362008358057027213, guid: 5f3ca005c49467c409a6c657a2e9900c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7105867189830386704, guid: 5f3ca005c49467c409a6c657a2e9900c, type: 3}
-      propertyPath: info.price
-      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5918,10 +5850,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4140657864677391242, guid: 45458c1e9d1b425479c760023b069b2a, type: 3}
-      propertyPath: info.price
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5997,10 +5925,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1479250699783271025, guid: c222f3d608f3a834383fca5e5d1fae3b, type: 3}
-      propertyPath: info.price
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 5293867013569647063, guid: c222f3d608f3a834383fca5e5d1fae3b, type: 3}
       propertyPath: m_Name
       value: bottle1_orange
