@@ -1229,6 +1229,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 179928e9e9cb4c14db0dfd4ae65e9996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StockInfoController
+  foodInfo:
+  - name: Apple Green
+    typeOfStock: 3
+    price: 1.5
+    stockObject: {fileID: 7105867189830386704, guid: 5f3ca005c49467c409a6c657a2e9900c, type: 3}
+  - name: Aubergine
+    typeOfStock: 3
+    price: 1.5
+    stockObject: {fileID: 7001335156217049125, guid: 3fc6429aca316374ba6902cabac2d5f1, type: 3}
+  - name: Lemon
+    typeOfStock: 3
+    price: 1
+    stockObject: {fileID: 6608870540794265560, guid: a7de9b5006555794cb0e2757eb072894, type: 3}
+  - name: Lettuce
+    typeOfStock: 4
+    price: 2
+    stockObject: {fileID: 2942173607255115050, guid: d411dad2bc1dc714aa635b7e00b4c1e0, type: 3}
+  - name: Pineapple
+    typeOfStock: 4
+    price: 4
+    stockObject: {fileID: 4878848040285068788, guid: e4fdf84e438e9204883f41a6769dd1b7, type: 3}
+  - name: Watermelon Half
+    typeOfStock: 4
+    price: 2.5
+    stockObject: {fileID: 6958007266044531327, guid: 20e10f1d3ad938247968716a1a487d20, type: 3}
+  - name: Watermelon
+    typeOfStock: 4
+    price: 5
+    stockObject: {fileID: 4376889494830669589, guid: 22465ec83d7457946aa638e9f0cfc7cc, type: 3}
+  produceInfo: []
 --- !u!1 &351090683
 GameObject:
   m_ObjectHideFlags: 0
