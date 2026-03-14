@@ -1,15 +1,18 @@
+using TMPro;
 using UnityEngine;
 
 public class UIController : MonoBehaviour
 {
     public static UIController instance;
 
+    public GameObject updatePricePanel;
+
+    public TMP_Text basePriceText, currentPriceText;
+
     private void Awake()
     {
         instance = this;
     }
-
-    public GameObject updatePricePanel;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,11 +26,14 @@ public class UIController : MonoBehaviour
         
     }
 
-    public void OpenUpdatePrice()
+    public void OpenUpdatePrice(StockInfo stockToUpdate)
     {
         updatePricePanel.SetActive(true);
 
         Cursor.lockState = CursorLockMode.None;
+
+        basePriceText.text = "R$" + stockToUpdate.price;
+        currentPriceText.text = "R$" + stockToUpdate.currentPrice;
     }
 
     public void CloseUpdatePrice()

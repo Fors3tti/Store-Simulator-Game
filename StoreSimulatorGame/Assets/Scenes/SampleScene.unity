@@ -1959,71 +1959,88 @@ MonoBehaviour:
   - name: Apple Green
     typeOfStock: 3
     price: 1.75
+    currentPrice: 0
     stockObject: {fileID: 7105867189830386704, guid: 5f3ca005c49467c409a6c657a2e9900c, type: 3}
   - name: Aubergine
     typeOfStock: 3
     price: 1.5
+    currentPrice: 0
     stockObject: {fileID: 7001335156217049125, guid: 3fc6429aca316374ba6902cabac2d5f1, type: 3}
   - name: Lemon
     typeOfStock: 3
     price: 1
+    currentPrice: 0
     stockObject: {fileID: 6608870540794265560, guid: a7de9b5006555794cb0e2757eb072894, type: 3}
   - name: Lettuce
     typeOfStock: 4
     price: 2
+    currentPrice: 0
     stockObject: {fileID: 2942173607255115050, guid: d411dad2bc1dc714aa635b7e00b4c1e0, type: 3}
   - name: Pineapple
     typeOfStock: 4
     price: 4
+    currentPrice: 0
     stockObject: {fileID: 4878848040285068788, guid: e4fdf84e438e9204883f41a6769dd1b7, type: 3}
   - name: Watermelon Half
     typeOfStock: 4
     price: 2.5
+    currentPrice: 0
     stockObject: {fileID: 6958007266044531327, guid: 20e10f1d3ad938247968716a1a487d20, type: 3}
   - name: Watermelon
     typeOfStock: 4
     price: 5
+    currentPrice: 0
     stockObject: {fileID: 4376889494830669589, guid: 22465ec83d7457946aa638e9f0cfc7cc, type: 3}
   produceInfo:
   - name: Cola Drink
     typeOfStock: 1
     price: 3
+    currentPrice: 0
     stockObject: {fileID: 1722704884629910347, guid: 6d2837f0ad9f4844cb4acb5df1a9115e, type: 3}
   - name: Lime Drink
     typeOfStock: 1
     price: 3
+    currentPrice: 0
     stockObject: {fileID: 8459584106619388308, guid: 7868b719bbe826b48b9a09c3c937562f, type: 3}
   - name: Orange Drink
     typeOfStock: 1
     price: 3
+    currentPrice: 0
     stockObject: {fileID: 1479250699783271025, guid: c222f3d608f3a834383fca5e5d1fae3b, type: 3}
   - name: Water Drink
     typeOfStock: 1
     price: 2
+    currentPrice: 0
     stockObject: {fileID: 64587455569658086, guid: b7cea0b05a55c3d44b07c7f042a0b38a, type: 3}
   - name: Granola Cereal
     typeOfStock: 0
     price: 2.5
+    currentPrice: 0
     stockObject: {fileID: 164102134711812511, guid: c1f1ac9c17fa0524486939b2143d6d16, type: 3}
   - name: Rings Cereal
     typeOfStock: 0
     price: 2.5
+    currentPrice: 0
     stockObject: {fileID: 2342984193521744786, guid: aa4d2438a0140e447a96fb70d0724c26, type: 3}
   - name: BBQ Chips
     typeOfStock: 2
     price: 2
+    currentPrice: 0
     stockObject: {fileID: 4140657864677391242, guid: 45458c1e9d1b425479c760023b069b2a, type: 3}
   - name: Tube Chips
     typeOfStock: 2
     price: 2
+    currentPrice: 0
     stockObject: {fileID: 1043100660722289339, guid: 7f4c5b8cf7f0052459eac7e4bc729c23, type: 3}
   - name: Classic Chips
     typeOfStock: 2
     price: 2
+    currentPrice: 0
     stockObject: {fileID: 8808582709140700520, guid: 43e0ae34c698be949ba140489df86006, type: 3}
   - name: Onion Chips
     typeOfStock: 2
     price: 2
+    currentPrice: 0
     stockObject: {fileID: 3095801645471677831, guid: 9407da6a03393fd4db39f26e2d2e0c40, type: 3}
 --- !u!1 &351090683
 GameObject:
@@ -7261,6 +7278,7 @@ MonoBehaviour:
     name: 
     typeOfStock: 0
     price: 0
+    currentPrice: 0
     stockObject: {fileID: 0}
   objectsOnShelf: []
   bigDrinkPoints:
@@ -7607,6 +7625,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIController
   updatePricePanel: {fileID: 1122442246}
+  basePriceText: {fileID: 2021652541}
+  currentPriceText: {fileID: 308791824}
 --- !u!1001 &1928969488
 PrefabInstance:
   m_ObjectHideFlags: 0
