@@ -9,6 +9,10 @@ public class UIController : MonoBehaviour
 
     public TMP_Text basePriceText, currentPriceText;
 
+    public TMP_InputField priceInputField;
+
+    private StockInfo activeStockInfo;
+
     private void Awake()
     {
         instance = this;
@@ -34,6 +38,8 @@ public class UIController : MonoBehaviour
 
         basePriceText.text = "R$" + stockToUpdate.price;
         currentPriceText.text = "R$" + stockToUpdate.currentPrice;
+
+        activeStockInfo = stockToUpdate;
     }
 
     public void CloseUpdatePrice()
@@ -41,5 +47,12 @@ public class UIController : MonoBehaviour
         updatePricePanel.SetActive(false);
 
         Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public void ApplyPriceUpdate()
+    {
+        activeStockInfo.currentPrice = float.Parse(priceInputField.text);
+
+        currentPriceText.text = "R$" + activeStockInfo.currentPrice;
     }
 }

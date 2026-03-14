@@ -1052,7 +1052,7 @@ GameObject:
   - component: {fileID: 197760038}
   - component: {fileID: 197760037}
   m_Layer: 5
-  m_Name: InputField (TMP)
+  m_Name: Price Input Field (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5314,7 +5314,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1221765310}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1921771494}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: ApplyPriceUpdate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1221765310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7627,6 +7639,7 @@ MonoBehaviour:
   updatePricePanel: {fileID: 1122442246}
   basePriceText: {fileID: 2021652541}
   currentPriceText: {fileID: 308791824}
+  priceInputField: {fileID: 197760037}
 --- !u!1001 &1928969488
 PrefabInstance:
   m_ObjectHideFlags: 0
