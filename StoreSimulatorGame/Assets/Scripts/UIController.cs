@@ -26,10 +26,14 @@ public class UIController : MonoBehaviour
     public void OpenUpdatePrice()
     {
         updatePricePanel.SetActive(true);
+
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void CloseUpdatePrice()
     {
         updatePricePanel.SetActive(false);
+
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }

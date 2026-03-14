@@ -38,6 +38,14 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (UIController.instance.updatePricePanel != null)
+        {
+            if (UIController.instance.updatePricePanel.activeSelf == true)
+            {
+                return;
+            }
+        }
+
         Vector2 lookInput = lookAction.action.ReadValue<Vector2>();
 
         horiRot += lookInput.x * Time.deltaTime * lookSpeed;
