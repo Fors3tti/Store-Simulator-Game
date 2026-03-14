@@ -130,6 +130,15 @@ public class PlayerController : MonoBehaviour
                     }
                 }
             }
+
+            if (Keyboard.current.eKey.wasPressedThisFrame)
+            {
+                if(Physics.Raycast(ray, out hit, interactionRange, whatIsShelf))
+                {
+                    hit.collider.GetComponent<ShelfSpaceController>().StartPriceUpdate();
+                }
+            }
+
         }
         else
         {
