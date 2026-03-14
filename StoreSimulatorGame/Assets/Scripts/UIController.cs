@@ -2,6 +2,15 @@ using UnityEngine;
 
 public class UIController : MonoBehaviour
 {
+    public static UIController instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
+    public GameObject updatePricePanel;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,5 +21,15 @@ public class UIController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void OpenUpdatePrice()
+    {
+        updatePricePanel.SetActive(true);
+    }
+
+    public void CloseUpdatePrice()
+    {
+        updatePricePanel.SetActive(false);
     }
 }
