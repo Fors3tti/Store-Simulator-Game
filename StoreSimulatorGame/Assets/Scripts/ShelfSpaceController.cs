@@ -166,7 +166,7 @@ public class ShelfSpaceController : MonoBehaviour
         {
             info.currentPrice = price;
 
-            shelfLabel.text = "R$" + info.currentPrice;
+            shelfLabel.text = "R$" + info.currentPrice.ToString("F2");
         }
     }
 }

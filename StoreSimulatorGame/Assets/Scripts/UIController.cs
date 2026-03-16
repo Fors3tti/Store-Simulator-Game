@@ -36,10 +36,12 @@ public class UIController : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.None;
 
-        basePriceText.text = "R$" + stockToUpdate.price;
-        currentPriceText.text = "R$" + stockToUpdate.currentPrice;
+        basePriceText.text = "R$" + stockToUpdate.price.ToString("F2");
+        currentPriceText.text = "R$" + stockToUpdate.currentPrice.ToString("F2");
 
         activeStockInfo = stockToUpdate;
+
+        priceInputField.text = stockToUpdate.currentPrice.ToString();
     }
 
     public void CloseUpdatePrice()
@@ -53,7 +55,7 @@ public class UIController : MonoBehaviour
     {
         activeStockInfo.currentPrice = float.Parse(priceInputField.text);
 
-        currentPriceText.text = "R$" + activeStockInfo.currentPrice;
+        currentPriceText.text = "R$" + activeStockInfo.currentPrice.ToString("F2");
 
         StockInfoController.instance.UpdatePrice(activeStockInfo.name, activeStockInfo.currentPrice);
 
