@@ -4867,11 +4867,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7633530379925704138, guid: 2f587bf2195a1484cb474c0eec3ff206, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -551725945087664469, guid: 2f587bf2195a1484cb474c0eec3ff206, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2f587bf2195a1484cb474c0eec3ff206, type: 3}
       propertyPath: m_Name
@@ -5543,6 +5543,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1562740588}
+  - component: {fileID: 1562740589}
   m_Layer: 0
   m_Name: Box Of Stock
   m_TagString: Untagged
@@ -5567,6 +5568,85 @@ Transform:
   - {fileID: 226084005}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1562740589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562740587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5e076a4553a8a94ba9871ad9e1558a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StockBoxController
+  bigDrinkPoints:
+  - {fileID: 945133478}
+  - {fileID: 334342116}
+  - {fileID: 231238132}
+  - {fileID: 486341724}
+  - {fileID: 669646047}
+  - {fileID: 1083985804}
+  - {fileID: 819427218}
+  - {fileID: 1965158759}
+  cerealPoints:
+  - {fileID: 2025265088}
+  - {fileID: 1314960019}
+  - {fileID: 1614376461}
+  - {fileID: 2093631407}
+  - {fileID: 455112860}
+  - {fileID: 960681095}
+  - {fileID: 1981455199}
+  - {fileID: 804926822}
+  - {fileID: 383050067}
+  - {fileID: 1277075757}
+  - {fileID: 412870227}
+  - {fileID: 1861444193}
+  tubeChipsPoints:
+  - {fileID: 1872602528}
+  - {fileID: 1770056336}
+  - {fileID: 1669834976}
+  - {fileID: 1684730940}
+  - {fileID: 580157930}
+  - {fileID: 475192292}
+  - {fileID: 1660963907}
+  - {fileID: 1828386250}
+  - {fileID: 1393515343}
+  - {fileID: 263826231}
+  - {fileID: 1891625302}
+  - {fileID: 1321086601}
+  - {fileID: 1395741054}
+  - {fileID: 226809270}
+  - {fileID: 1212204638}
+  - {fileID: 2118023566}
+  - {fileID: 77286919}
+  - {fileID: 320525164}
+  - {fileID: 490232889}
+  - {fileID: 528006152}
+  - {fileID: 1890095073}
+  - {fileID: 281029315}
+  - {fileID: 1871555058}
+  - {fileID: 262931057}
+  fruitPoints:
+  - {fileID: 276649766}
+  - {fileID: 2015950316}
+  - {fileID: 420449280}
+  - {fileID: 247613751}
+  - {fileID: 422848181}
+  - {fileID: 1940834648}
+  - {fileID: 1835006013}
+  - {fileID: 1420662509}
+  - {fileID: 1552527797}
+  - {fileID: 75762683}
+  - {fileID: 124591353}
+  - {fileID: 1641726247}
+  - {fileID: 996960050}
+  - {fileID: 276983059}
+  - {fileID: 2006071414}
+  - {fileID: 1371633080}
+  largeFruitPoints:
+  - {fileID: 959599169}
+  - {fileID: 1999451794}
 --- !u!1001 &1589979434
 PrefabInstance:
   m_ObjectHideFlags: 0
