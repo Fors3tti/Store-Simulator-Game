@@ -54,5 +54,9 @@ public class UIController : MonoBehaviour
         activeStockInfo.currentPrice = float.Parse(priceInputField.text);
 
         currentPriceText.text = "R$" + activeStockInfo.currentPrice;
+
+        StockInfoController.instance.UpdatePrice(activeStockInfo.name, activeStockInfo.currentPrice);
+
+        CloseUpdatePrice();
     }
 }
