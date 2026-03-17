@@ -38,23 +38,25 @@ public class StockObject : MonoBehaviour
         transform.localRotation = Quaternion.identity;
 
         isPlaced = false;
-
         col.enabled = false;
     }
 
     public void MakePlaced()
     {
         theRB.isKinematic = true;
-
         isPlaced = true;
-
         col.enabled = false;
     }
 
     public void Release()
     {
         theRB.isKinematic = false;
-
         col.enabled = true;
+    }
+
+    public void PlaceInBox()
+    {
+        theRB.isKinematic = true;
+        col.enabled = false;
     }
 }
