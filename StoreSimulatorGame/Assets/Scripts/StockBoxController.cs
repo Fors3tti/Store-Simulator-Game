@@ -12,6 +12,13 @@ public class StockBoxController : MonoBehaviour
 
     public bool testFill;
 
+    public Rigidbody theRB;
+    public Collider col;
+
+    private bool isHeld;
+
+    public float moveSpeed = 5f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,6 +33,14 @@ public class StockBoxController : MonoBehaviour
             testFill = false;
 
             SetupBox(info);
+        }
+
+        if (isHeld == true)
+        {
+            transform.localPosition =
+                Vector3.MoveTowards(transform.localPosition, Vector3.zero, moveSpeed * Time.deltaTime);
+            transform.localRotation =
+                Quaternion.Slerp(transform.localRotation, Quaternion.identity, moveSpeed * Time.deltaTime);
         }
     }
 
@@ -81,5 +96,18 @@ public class StockBoxController : MonoBehaviour
                 stock.PlaceInBox();
             }
         }
+    }
+    public void PickUp()
+    {
+        theRB.isKinematic = true;
+        col.enabled = false;
+        isHeld = true;
+    }
+
+    public void Release()
+    {
+        theRB.isKinematic = false;
+        col.enabled = true;
+        isHeld = false;
     }
 }

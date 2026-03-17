@@ -5544,7 +5544,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1562740588}
   - component: {fileID: 1562740589}
-  m_Layer: 0
+  - component: {fileID: 1562740590}
+  - component: {fileID: 1562740591}
+  m_Layer: 8
   m_Name: Box Of Stock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5580,6 +5582,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5e076a4553a8a94ba9871ad9e1558a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StockBoxController
+  info:
+    name: 
+    typeOfStock: 0
+    price: 0
+    currentPrice: 0
+    stockObject: {fileID: 0}
   bigDrinkPoints:
   - {fileID: 945133478}
   - {fileID: 334342116}
@@ -5647,6 +5655,59 @@ MonoBehaviour:
   largeFruitPoints:
   - {fileID: 959599169}
   - {fileID: 1999451794}
+  stockInBox: []
+  testFill: 0
+  theRB: {fileID: 1562740591}
+  col: {fileID: 1562740590}
+  moveSpeed: 5
+--- !u!65 &1562740590
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562740587}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.58106947, z: 0.7298684}
+  m_Center: {x: 0, y: 0.28502905, z: 0.0010612011}
+--- !u!54 &1562740591
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562740587}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1589979434
 PrefabInstance:
   m_ObjectHideFlags: 0

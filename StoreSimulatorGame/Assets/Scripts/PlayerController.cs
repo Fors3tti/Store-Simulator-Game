@@ -29,6 +29,10 @@ public class PlayerController : MonoBehaviour
 
     public LayerMask whatIsShelf;
 
+    public LayerMask whatIsStockBox;
+    public StockBoxController heldBox;
+    public Transform boxHoldPoint;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
