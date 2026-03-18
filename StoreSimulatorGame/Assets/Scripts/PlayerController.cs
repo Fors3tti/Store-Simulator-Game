@@ -166,40 +166,55 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            if (Mouse.current.leftButton.wasPressedThisFrame)
+            if (heldPickUp != null)
             {
-                if (Physics.Raycast(ray, out hit, interactionRange, whatIsShelf))
+                if (Mouse.current.leftButton.wasPressedThisFrame)
                 {
-                    /* heldPickUp.transform.position = hit.transform.position;
-                    heldPickUp.transform.rotation = hit.transform.rotation;
+                    if (Physics.Raycast(ray, out hit, interactionRange, whatIsShelf))
+                    {
+                        /* heldPickUp.transform.position = hit.transform.position;
+                        heldPickUp.transform.rotation = hit.transform.rotation;
+
+                        heldPickUp.transform.SetParent(null);
+                        heldPickUp = null; */
+
+                        /* heldPickUp.MakePlaced();
+
+                        heldPickUp.transform.SetParent(hit.transform);
+                        heldPickUp = null; */
+
+                        hit.collider.GetComponent<ShelfSpaceController>().PlaceStock(heldPickUp);
+
+                        if (heldPickUp.isPlaced == true)
+                        {
+                            heldPickUp = null;
+                        }
+                    }
+                }
+
+                if (Mouse.current.rightButton.wasPressedThisFrame)
+                {
+                    //Rigidbody pickUpRB = heldPickUp.GetComponent<Rigidbody>();
+                    //pickUpRB.isKinematic = false;
+
+                    heldPickUp.Release();
+                    heldPickUp.theRB.AddForce(theCam.transform.forward * throwForce, ForceMode.Impulse);
 
                     heldPickUp.transform.SetParent(null);
-                    heldPickUp = null; */
-
-                    /* heldPickUp.MakePlaced();
-
-                    heldPickUp.transform.SetParent(hit.transform);
-                    heldPickUp = null; */
-
-                    hit.collider.GetComponent<ShelfSpaceController>().PlaceStock(heldPickUp);
-
-                    if (heldPickUp.isPlaced == true)
-                    {
-                        heldPickUp = null;
-                    }
+                    heldPickUp = null;
                 }
             }
 
-            if (Mouse.current.rightButton.wasPressedThisFrame)
+            if (heldBox != null)
             {
-                //Rigidbody pickUpRB = heldPickUp.GetComponent<Rigidbody>();
-                //pickUpRB.isKinematic = false;
+                if (Mouse.current.rightButton.wasPressedThisFrame)
+                {
+                    heldBox.Release();
+                    heldBox.theRB.AddForce(theCam.transform.forward * throwForce, ForceMode.Impulse);
 
-                heldPickUp.Release();
-                heldPickUp.theRB.AddForce(theCam.transform.forward * throwForce, ForceMode.Impulse);
-
-                heldPickUp.transform.SetParent(null);
-                heldPickUp = null;
+                    heldBox.transform.SetParent(null);
+                    heldBox = null;
+                }
             }
         }
     }
