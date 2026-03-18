@@ -108,7 +108,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("I can't see anything!");
         } */
 
-        if (heldPickUp == null)
+        if (heldPickUp == null && heldBox == null)
         {
             if (Mouse.current.leftButton.wasPressedThisFrame)
             {
@@ -126,6 +126,18 @@ public class PlayerController : MonoBehaviour
                     heldPickUp = hit.collider.GetComponent<StockObject>();
                     heldPickUp.transform.SetParent(holdPoint);
                     heldPickUp.PickUp();
+
+                    return;
+                }
+
+                if (Physics.Raycast(ray, out hit, interactionRange, whatIsStockBox))
+                {
+                    heldBox = hit.collider.GetComponent<StockBoxController>();
+
+                    heldBox.transform.SetParent(holdPoint);
+                    heldBox.PickUp();
+
+                    return;
                 }
             }
 

@@ -3157,9 +3157,9 @@ MonoBehaviour:
     m_Bits: 128
   whatIsStockBox:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   heldBox: {fileID: 0}
-  boxHoldPoint: {fileID: 0}
+  boxHoldPoint: {fileID: 208417409}
 --- !u!143 &634220821
 CharacterController:
   m_ObjectHideFlags: 0
