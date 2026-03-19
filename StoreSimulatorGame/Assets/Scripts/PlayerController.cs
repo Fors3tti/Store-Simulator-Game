@@ -137,6 +137,11 @@ public class PlayerController : MonoBehaviour
                     heldBox.transform.SetParent(holdPoint);
                     heldBox.PickUp();
 
+                    if (heldBox.flap1.activeSelf == true)
+                    {
+                        heldBox.OpenClose();
+                    }
+
                     return;
                 }
             }
@@ -152,6 +157,13 @@ public class PlayerController : MonoBehaviour
                         heldPickUp.transform.SetParent(holdPoint);
                         heldPickUp.PickUp();
                     }
+
+                    return;
+                }
+
+                if(Physics.Raycast(ray, out hit, interactionRange, whatIsStockBox))
+                {
+                    hit.collider.GetComponent<StockBoxController>().OpenClose();
                 }
             }
 
