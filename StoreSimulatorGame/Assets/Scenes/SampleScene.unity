@@ -3089,6 +3089,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1550143356}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &626767591 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7633530379925704138, guid: 2f587bf2195a1484cb474c0eec3ff206, type: 3}
+  m_PrefabInstance: {fileID: 1402111693}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &634220818
 GameObject:
   m_ObjectHideFlags: 0
@@ -3630,6 +3635,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5652808134093622585, guid: a54751c0cf0e00846a87bf7e034ae8fe, type: 3}
   m_PrefabInstance: {fileID: 902459160}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &915524848 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -551725945087664469, guid: 2f587bf2195a1484cb474c0eec3ff206, type: 3}
+  m_PrefabInstance: {fileID: 1402111693}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &945133477
 GameObject:
@@ -4699,6 +4709,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4178562149610498620, guid: a7de9b5006555794cb0e2757eb072894, type: 3}
   m_PrefabInstance: {fileID: 868529854}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1353360045 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6608870540794265560, guid: a7de9b5006555794cb0e2757eb072894, type: 3}
+  m_PrefabInstance: {fileID: 868529854}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57732da32f93a1046a448396a66f1b71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StockObject
 --- !u!1001 &1357822452
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5620,11 +5641,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StockBoxController
   info:
-    name: 
-    typeOfStock: 0
-    price: 0
+    name: Lemon
+    typeOfStock: 3
+    price: 1
     currentPrice: 0
-    stockObject: {fileID: 0}
+    stockObject: {fileID: 1353360045}
   bigDrinkPoints:
   - {fileID: 945133478}
   - {fileID: 334342116}
@@ -5693,10 +5714,12 @@ MonoBehaviour:
   - {fileID: 959599169}
   - {fileID: 1999451794}
   stockInBox: []
-  testFill: 0
+  testFill: 1
   theRB: {fileID: 1562740591}
   col: {fileID: 1562740590}
   moveSpeed: 5
+  flap1: {fileID: 626767591}
+  flap2: {fileID: 915524848}
 --- !u!65 &1562740590
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -19,6 +19,8 @@ public class StockBoxController : MonoBehaviour
 
     public float moveSpeed = 5f;
 
+    public GameObject flap1, flap2;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -109,5 +111,19 @@ public class StockBoxController : MonoBehaviour
         theRB.isKinematic = false;
         col.enabled = true;
         isHeld = false;
+    }
+
+    public void OpenClose()
+    {
+        if (flap1.activeSelf == true)
+        {
+            flap1.SetActive(false);
+            flap2.SetActive(false);
+        }
+        else
+        {
+            flap1.SetActive(true);
+            flap2.SetActive(true);
+        }
     }
 }

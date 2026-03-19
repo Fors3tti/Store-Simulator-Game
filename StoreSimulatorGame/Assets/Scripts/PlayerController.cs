@@ -215,6 +215,11 @@ public class PlayerController : MonoBehaviour
                     heldBox.transform.SetParent(null);
                     heldBox = null;
                 }
+
+                if (Keyboard.current.eKey.wasPressedThisFrame)
+                {
+                    heldBox.OpenClose();
+                }
             }
         }
     }
