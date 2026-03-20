@@ -138,5 +138,10 @@ public class StockBoxController : MonoBehaviour
                 stockInBox.RemoveAt(stockInBox.Count - 1);
             }
         }
+
+        if (flap1.activeSelf == true)
+        {
+            OpenClose();
+        }
     }
 }

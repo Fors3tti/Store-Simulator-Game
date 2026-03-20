@@ -33,6 +33,9 @@ public class PlayerController : MonoBehaviour
     public StockBoxController heldBox;
     public Transform boxHoldPoint;
 
+    public float waitToPlaceStock;
+    private float placeStockCounter;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -238,6 +241,23 @@ public class PlayerController : MonoBehaviour
                     if(Physics.Raycast(ray, out hit, interactionRange, whatIsShelf))
                     {
                         heldBox.PlaceStockOnShelf(hit.collider.GetComponent<ShelfSpaceController>());
+
+                        placeStockCounter = waitToPlaceStock;
+                    }
+                }
+
+                if (Mouse.current.leftButton.isPressed)
+                {
+                    placeStockCounter -= Time.deltaTime;
+
+                    if (placeStockCounter <= 0)
+                    {
+                        if (Physics.Raycast(ray, out hit, interactionRange, whatIsShelf))
+                        {
+                            heldBox.PlaceStockOnShelf(hit.collider.GetComponent<ShelfSpaceController>());
+
+                            placeStockCounter = waitToPlaceStock;
+                        }
                     }
                 }
             }
