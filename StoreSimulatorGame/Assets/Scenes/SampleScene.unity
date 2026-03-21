@@ -8469,6 +8469,7 @@ MonoBehaviour:
   currentPriceText: {fileID: 308791824}
   priceInputField: {fileID: 197760037}
   moneyText: {fileID: 1672008655}
+  buyMenuScreen: {fileID: 242941963}
 --- !u!1001 &1928969488
 PrefabInstance:
   m_ObjectHideFlags: 0
