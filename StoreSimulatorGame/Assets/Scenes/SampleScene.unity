@@ -997,7 +997,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &131478468
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1688,13 +1688,14 @@ GameObject:
   - component: {fileID: 242941967}
   - component: {fileID: 242941966}
   - component: {fileID: 242941965}
+  - component: {fileID: 242941968}
   m_Layer: 5
   m_Name: Buy Menu Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &242941964
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1778,6 +1779,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242941963}
   m_CullTransparentMesh: 1
+--- !u!114 &242941968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242941963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 770531f39dbda794f96d51429c635976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuyMenuController
+  stockPanel: {fileID: 131478467}
+  furniturePanel: {fileID: 1014878814}
 --- !u!1001 &244123556
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3821,9 +3836,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 242941968}
+        m_TargetAssemblyTypeName: BuyMenuController, Assembly-CSharp
+        m_MethodName: OpenStockPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3985,9 +4000,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 242941968}
+        m_TargetAssemblyTypeName: BuyMenuController, Assembly-CSharp
+        m_MethodName: OpenFurniturePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
