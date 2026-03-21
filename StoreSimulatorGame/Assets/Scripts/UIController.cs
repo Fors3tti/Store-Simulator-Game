@@ -13,6 +13,8 @@ public class UIController : MonoBehaviour
 
     private StockInfo activeStockInfo;
 
+    public TMP_Text moneyText;
+
     private void Awake()
     {
         instance = this;
@@ -60,5 +62,10 @@ public class UIController : MonoBehaviour
         StockInfoController.instance.UpdatePrice(activeStockInfo.name, activeStockInfo.currentPrice);
 
         CloseUpdatePrice();
+    }
+
+    public void UpdateMoney(float currentMoney)
+    {
+        moneyText.text = "R$" + currentMoney.ToString("F2");
     }
 }
