@@ -1217,6 +1217,7 @@ GameObject:
   - component: {fileID: 132117663}
   - component: {fileID: 132117662}
   - component: {fileID: 132117661}
+  - component: {fileID: 132117664}
   m_Layer: 5
   m_Name: Buy Stock Frame
   m_TagString: Untagged
@@ -1301,6 +1302,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 132117659}
   m_CullTransparentMesh: 1
+--- !u!114 &132117664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132117659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcdf9bf42bf96934395f2dffacd0b125, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuyStockFrameController
+  info:
+    name: Apple Green
+    typeOfStock: 3
+    price: 0
+    currentPrice: 0
+    stockObject: {fileID: 0}
+  nameText: {fileID: 796544339}
+  priceText: {fileID: 1621300029}
+  boxAmountText: {fileID: 980261104}
+  boxPriceText: {fileID: 1487457132}
+  buttonText: {fileID: 1706792968}
 --- !u!1001 &172270026
 PrefabInstance:
   m_ObjectHideFlags: 0
