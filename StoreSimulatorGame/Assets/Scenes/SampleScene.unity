@@ -969,9 +969,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BuyMenuController, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 132117664}
+        m_TargetAssemblyTypeName: BuyStockFrameController, Assembly-CSharp
+        m_MethodName: BuyBox
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3361,7 +3361,7 @@ Transform:
   m_GameObject: {fileID: 634220818}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0.5, z: 0}
+  m_LocalPosition: {x: 1, y: 1, z: 0}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3961,9 +3961,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1921771494}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OpenCloseBuyMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7704,7 +7704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6850511468692342299, guid: 5c6bda8b488aae540930f061416dde69, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6850511468692342299, guid: 5c6bda8b488aae540930f061416dde69, type: 3}
       propertyPath: m_LocalPosition.z

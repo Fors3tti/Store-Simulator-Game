@@ -2203,7 +2203,7 @@ Transform:
   m_GameObject: {fileID: 8928259557701517589}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0.5, z: 4}
+  m_LocalPosition: {x: 2, y: 0, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2228,7 +2228,7 @@ MonoBehaviour:
     typeOfStock: 3
     price: 1
     currentPrice: 0
-    stockObject: {fileID: 0}
+    stockObject: {fileID: 6608870540794265560, guid: a7de9b5006555794cb0e2757eb072894, type: 3}
   bigDrinkPoints:
   - {fileID: 5470229572004814325}
   - {fileID: 5224732949799671487}
@@ -2297,7 +2297,7 @@ MonoBehaviour:
   - {fileID: 7319542634921988320}
   - {fileID: 4183237866881585692}
   stockInBox: []
-  testFill: 1
+  testFill: 0
   theRB: {fileID: 3608880741001068816}
   col: {fileID: 5013536286011030343}
   moveSpeed: 5
