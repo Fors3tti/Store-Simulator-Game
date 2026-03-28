@@ -38,6 +38,10 @@ public class PlayerController : MonoBehaviour
 
     public LayerMask whatIsBin;
 
+    public LayerMask whatIsFurniture;
+    public Transform furniturePoint;
+    public GameObject heldFurniture;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -121,7 +125,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("I can't see anything!");
         } */
 
-        if (heldPickUp == null && heldBox == null)
+        if (heldPickUp == null && heldBox == null && heldFurniture == null)
         {
             if (Mouse.current.leftButton.wasPressedThisFrame)
             {
@@ -147,7 +151,7 @@ public class PlayerController : MonoBehaviour
                 {
                     heldBox = hit.collider.GetComponent<StockBoxController>();
 
-                    heldBox.transform.SetParent(holdPoint);
+                    heldBox.transform.SetParent(boxHoldPoint);
                     heldBox.PickUp();
 
                     if (heldBox.flap1.activeSelf == true)
@@ -174,7 +178,7 @@ public class PlayerController : MonoBehaviour
                     return;
                 }
 
-                if(Physics.Raycast(ray, out hit, interactionRange, whatIsStockBox))
+                if (Physics.Raycast(ray, out hit, interactionRange, whatIsStockBox))
                 {
                     hit.collider.GetComponent<StockBoxController>().OpenClose();
                 }
@@ -182,12 +186,23 @@ public class PlayerController : MonoBehaviour
 
             if (Keyboard.current.eKey.wasPressedThisFrame)
             {
-                if(Physics.Raycast(ray, out hit, interactionRange, whatIsShelf))
+                if (Physics.Raycast(ray, out hit, interactionRange, whatIsShelf))
                 {
                     hit.collider.GetComponent<ShelfSpaceController>().StartPriceUpdate();
                 }
             }
 
+            if (Keyboard.current.rKey.wasPressedThisFrame)
+            {
+                if (Physics.Raycast(ray, out hit, interactionRange, whatIsFurniture))
+                {
+                    heldFurniture = hit.transform.gameObject;
+
+                    heldFurniture.transform.SetParent(furniturePoint);
+                    heldFurniture.transform.localPosition = Vector3.zero;
+                    heldFurniture.transform.localRotation = Quaternion.identity;
+                }
+            }
         }
         else
         {
