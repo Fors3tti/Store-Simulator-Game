@@ -298,6 +298,18 @@ public class PlayerController : MonoBehaviour
                     }
                 }
             }
+
+            if (heldFurniture != null)
+            {
+                heldFurniture.transform.position = new Vector3(furniturePoint.position.x, 0f, furniturePoint.position.z);
+                heldFurniture.transform.LookAt(new Vector3(transform.position.x, 0f, transform.position.z));
+
+                if (Mouse.current.leftButton.wasPressedThisFrame || Keyboard.current.rKey.wasPressedThisFrame)
+                {
+                    heldFurniture.transform.SetParent(null);
+                    heldFurniture = null;
+                }
+            }
         }
     }
 }
