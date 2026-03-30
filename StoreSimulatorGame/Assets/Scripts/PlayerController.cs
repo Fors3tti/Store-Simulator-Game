@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
 
     public LayerMask whatIsFurniture;
     public Transform furniturePoint;
-    public GameObject heldFurniture;
+    public FurnitureController heldFurniture;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -196,11 +196,13 @@ public class PlayerController : MonoBehaviour
             {
                 if (Physics.Raycast(ray, out hit, interactionRange, whatIsFurniture))
                 {
-                    heldFurniture = hit.transform.gameObject;
+                    heldFurniture = hit.transform.GetComponent<FurnitureController>();
 
                     heldFurniture.transform.SetParent(furniturePoint);
                     heldFurniture.transform.localPosition = Vector3.zero;
                     heldFurniture.transform.localRotation = Quaternion.identity;
+
+                    heldFurniture.MakePlaceable();
                 }
             }
         }
@@ -307,6 +309,9 @@ public class PlayerController : MonoBehaviour
                 if (Mouse.current.leftButton.wasPressedThisFrame || Keyboard.current.rKey.wasPressedThisFrame)
                 {
                     heldFurniture.transform.SetParent(null);
+
+                    heldFurniture.PlaceFurniture();
+
                     heldFurniture = null;
                 }
             }

@@ -18598,7 +18598,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8067054118615950336, guid: ba85512b1098bca4aadb8fab9fa3c369, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -19397,6 +19398,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44538d03fbeed744fb23924259eb34bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FurnitureController
+  mainObject: {fileID: 1817896688}
+  placingObject: {fileID: 1948905637}
+  col: {fileID: 1678061917}
 --- !u!1 &1706792966
 GameObject:
   m_ObjectHideFlags: 0
@@ -20298,7 +20302,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1817896689
 Transform:
   m_ObjectHideFlags: 0
@@ -21191,7 +21195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1948905638
 Transform:
   m_ObjectHideFlags: 0
