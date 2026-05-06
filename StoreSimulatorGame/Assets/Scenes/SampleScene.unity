@@ -154,9 +154,9 @@ RectTransform:
   m_Father: {fileID: 1321847045}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 0}
+  m_SizeDelta: {x: 20, y: -17}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1463984
 MonoBehaviour:
@@ -3752,7 +3752,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &242941964
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4074,9 +4074,9 @@ RectTransform:
   m_Father: {fileID: 1321847045}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -17, y: -17}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &250824563
 MonoBehaviour:
@@ -4304,7 +4304,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000018387751, y: 0}
+  m_AnchoredPosition: {x: 0.000027198887, y: 0}
   m_SizeDelta: {x: -5, y: 1610}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &293308389
@@ -8104,6 +8104,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 578709755}
   m_CullTransparentMesh: 1
+--- !u!1 &580238910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 580238911}
+  m_Layer: 0
+  m_Name: Furniture Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &580238911
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580238910}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8, y: 0, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2095417663}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &594481554
 GameObject:
   m_ObjectHideFlags: 0
@@ -11775,6 +11806,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 991368a54e857d545b4e8fb53cdbbd51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BuyFurnitureFrameController
+  furnitureController: {fileID: 6136060085336570117, guid: 1d41c42bccb3a574faf884d5b3cedd15, type: 3}
+  priceText: {fileID: 1774115883}
 --- !u!1 &860915790
 GameObject:
   m_ObjectHideFlags: 0
@@ -15443,9 +15476,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BuyStockFrameController, Assembly-CSharp
-        m_MethodName: BuyBox
+      - m_Target: {fileID: 851915761}
+        m_TargetAssemblyTypeName: BuyFurnitureFrameController, Assembly-CSharp
+        m_MethodName: BuyFurniture
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17166,8 +17199,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2070517161}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.6130435}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -17613,7 +17646,7 @@ Transform:
   m_GameObject: {fileID: 1359103642}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 2.5, z: 5}
+  m_LocalPosition: {x: 6, y: 2, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17652,7 +17685,7 @@ RectTransform:
   m_Father: {fileID: 1841536727}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -18621,9 +18654,9 @@ RectTransform:
   m_Father: {fileID: 1321847045}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 20}
+  m_SizeDelta: {x: -17, y: 20}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1513132565
 MonoBehaviour:
@@ -24111,6 +24144,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1359103643}
+  - {fileID: 580238911}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2095417664
@@ -24127,6 +24161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StoreController
   currentMoney: 1000
   stockSpawnPoint: {fileID: 1359103643}
+  furnitureSpawnPoint: {fileID: 580238911}
 --- !u!1 &2101026813
 GameObject:
   m_ObjectHideFlags: 0
@@ -24763,10 +24798,6 @@ PrefabInstance:
     - target: {fileID: 4170152681113123171, guid: 1d41c42bccb3a574faf884d5b3cedd15, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6136060085336570117, guid: 1d41c42bccb3a574faf884d5b3cedd15, type: 3}
-      propertyPath: price
-      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 8161433000853408510, guid: 1d41c42bccb3a574faf884d5b3cedd15, type: 3}
       propertyPath: m_Name

@@ -139,6 +139,7 @@ MonoBehaviour:
   mainObject: {fileID: 7296359681026316610}
   placingObject: {fileID: 3349478982463810008}
   col: {fileID: 587977866405597760}
+  price: 250
 --- !u!1001 &448108300656556049
 PrefabInstance:
   m_ObjectHideFlags: 0
