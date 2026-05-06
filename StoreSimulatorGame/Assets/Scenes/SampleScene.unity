@@ -4304,7 +4304,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00060376996, y: 0}
+  m_AnchoredPosition: {x: 0.000018387751, y: 0}
   m_SizeDelta: {x: -5, y: 1610}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &293308389
@@ -11680,8 +11680,9 @@ GameObject:
   - component: {fileID: 851915760}
   - component: {fileID: 851915759}
   - component: {fileID: 851915758}
+  - component: {fileID: 851915761}
   m_Layer: 5
-  m_Name: Buy Stock Frame
+  m_Name: Buy Furniture Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11762,6 +11763,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851915755}
   m_CullTransparentMesh: 1
+--- !u!114 &851915761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851915755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 991368a54e857d545b4e8fb53cdbbd51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuyFurnitureFrameController
 --- !u!1 &860915790
 GameObject:
   m_ObjectHideFlags: 0
@@ -24750,6 +24763,10 @@ PrefabInstance:
     - target: {fileID: 4170152681113123171, guid: 1d41c42bccb3a574faf884d5b3cedd15, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6136060085336570117, guid: 1d41c42bccb3a574faf884d5b3cedd15, type: 3}
+      propertyPath: price
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 8161433000853408510, guid: 1d41c42bccb3a574faf884d5b3cedd15, type: 3}
       propertyPath: m_Name
