@@ -103,7 +103,7 @@ MonoBehaviour:
   mainObject: {fileID: 8862844673656276659}
   placingObject: {fileID: 116648530334256695}
   col: {fileID: 4476104413813343365}
-  price: 250
+  price: 500
 --- !u!1 &8862844673656276659
 GameObject:
   m_ObjectHideFlags: 0
