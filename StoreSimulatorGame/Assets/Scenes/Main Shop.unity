@@ -3645,6 +3645,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 750509205}
+  - component: {fileID: 750509206}
   m_Layer: 0
   m_Name: Customer
   m_TagString: Untagged
@@ -3668,6 +3669,18 @@ Transform:
   - {fileID: 802467821}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &750509206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750509204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dccb2a9378ede2c4a8d44611bcc4e8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Customer
 --- !u!1 &793022607 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bdbca650ec248e04784dd280618edd52, type: 3}
